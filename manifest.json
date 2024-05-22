@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Word of the Day",
+    "description": "An extension to help you grow your vocabulary",
+    "version": "1.0",
+    "action": {
+      "default_popup": "public/index.html",
+      "default_icon": "wod-img.png"
+    }
+  }
