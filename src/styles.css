@@ -1,0 +1,33 @@
+body {
+    background-color : #fdf5e6;
+}
+
+#search {
+    background-color: #7f2b0a;
+    border: none;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#newWord {
+    margin: 5px;
+    border-radius: 8px;
+}
+
+#view {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 3.5px;
+}
+
+#home {
+    width: 250px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

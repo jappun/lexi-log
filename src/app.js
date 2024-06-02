@@ -2,7 +2,7 @@ var API_KEY= "YOUR-API-KEY-HERE";
 
 document.addEventListener("DOMContentLoaded", function() {
     // search new word
-    document.getElementById("submit").addEventListener("click", submit);
+    document.getElementById("submit").addEventListener("click", search);
     // To view your entire dictionary
     document.getElementById("view").addEventListener("click", viewDict);
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         location.href="dict.html";
 
     }
-    function submit() {
+    function search() {
         var newWord = document.getElementById("newWord").value;
         // todo: change source dictionary
         // get the top result
