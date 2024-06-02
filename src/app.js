@@ -1,26 +1,30 @@
-var API_KEY= "YOUR-API-KEY-HERE";
+var API_KEY=""
 
-document.addEventListener("DOMContentLoaded", function() {
-    // search new word
-    document.getElementById("submit").addEventListener("click", search);
-    // To view your entire dictionary
-    document.getElementById("view").addEventListener("click", viewDict);
+// To view your entire dictionary
+document.getElementById("view").addEventListener("click", viewDict);
+function viewDict(){
+    location.href="dict.html";
 
-    function viewDict(){
-        location.href="dict.html";
+}
 
-    }
-    function search() {
-        var newWord = document.getElementById("newWord").value;
-        // todo: change source dictionary
-        // get the top result
-        var req = `https://api.wordnik.com/v4/word.json/${newWord}/definitions?limit=1&includeRelated=false&useCanonical=false&includeTags=false&api_key=${API_KEY}`;
-
-        fetch(req)
-        .then(response => {return response.json()})
-        .then(data => {console.log(data);})
-        .catch(error => {
-            console.error('Error fetching definitions:', error);
-        });
+// search new word
+document.getElementById("search").addEventListener("click", search);
+document.getElementById("newWord").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        search();
     }
 });
+function search() {
+    var newWord = document.getElementById("newWord").value.toLowerCase();
+    var req = `https://api.wordnik.com/v4/word.json/${newWord}/definitions?limit=3&includeRelated=false&sourceDictionaries=all&useCanonical=false&includeTags=false&api_key=${API_KEY}`;
+    console.log(req);
+    fetch(req)
+    .then(response => {return response.json()})
+    .then(data => {
+        localStorage.setItem('newWordData', JSON.stringify(data));
+        location.href = "new.html";
+        })
+    .catch(error => {
+        console.error('Error fetching definitions:', error);
+    });
+}

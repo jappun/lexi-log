@@ -1,9 +1,18 @@
-body {
-    background-color : #fdf5e6;
+:root {
+    --bg-color: #fdf5e6;
+    --main-color: #7f2b0a
+  }
+  body {
+    background-color : var(--bg-color);
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
 }
 
 #search {
-    background-color: #7f2b0a;
+    background-color: var(--main-color);
     border: none;
     color: white;
     margin: 5px;
@@ -20,7 +29,6 @@ body {
     padding: 0;
     border: none;
     background-color: transparent;
-    cursor: pointer;
     margin-top: 3.5px;
 }
 
@@ -30,4 +38,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#result {
+    width: 500px;
+    height: 50%;
 }
