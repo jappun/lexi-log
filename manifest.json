@@ -4,7 +4,7 @@
     "description": "An extension to help you grow your vocabulary",
     "version": "1.0",
     "action": {
-      "default_popup": "public/index.html",
+      "default_popup": "src/public/index.html",
       "default_icon": "wod-img.png"
     }
   }
