@@ -16,8 +16,7 @@ document.getElementById("newWord").addEventListener("keydown", function(event) {
 });
 function search() {
     var newWord = document.getElementById("newWord").value.toLowerCase();
-    var req = `https://api.wordnik.com/v4/word.json/${newWord}/definitions?limit=3&includeRelated=false&sourceDictionaries=all&useCanonical=false&includeTags=false&api_key=${API_KEY}`;
-    console.log(req);
+    var req = `https://api.wordnik.com/v4/word.json/${newWord}/definitions?limit=5&includeRelated=false&sourceDictionaries=all&useCanonical=false&includeTags=false&api_key=${API_KEY}`;
     fetch(req)
     .then(response => {return response.json()})
     .then(data => {

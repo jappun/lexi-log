@@ -7,11 +7,13 @@
     color: var(--main-color);
 }
 
-button {
+svg {
+    stroke: var(--main-color);
     cursor: pointer;
 }
 
-#search {
+button {
+    cursor: pointer;
     background-color: var(--main-color);
     border: none;
     color: white;
@@ -20,16 +22,13 @@ button {
     text-decoration: none;
     border-radius: 8px;
 }
-#newWord {
-    margin: 5px;
+
+input {
     border-radius: 8px;
 }
 
-#view {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    margin-top: 3.5px;
+#newWord {
+    margin: 5px;
 }
 
 #home {
@@ -43,4 +42,22 @@ button {
 #result {
     width: 500px;
     height: 50%;
+    text-align: left;
+}
+
+#options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#notes {
+    flex: 1;
+    margin: 5px;
+}
+
+select {
+    margin: 5px;
+    border-radius: 8px;
 }

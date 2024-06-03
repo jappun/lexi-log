@@ -5,6 +5,6 @@
     "version": "1.0",
     "action": {
       "default_popup": "src/public/index.html",
-      "default_icon": "wod-img.png"
+      "default_icon": "book-logo.png"
     }
   }
