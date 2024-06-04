@@ -4,7 +4,6 @@ var API_KEY=""
 document.getElementById("view").addEventListener("click", viewDict);
 function viewDict(){
     location.href="dict.html";
-
 }
 
 // search new word

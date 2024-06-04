@@ -39,7 +39,7 @@ input {
     justify-content: space-between;
 }
 
-#result {
+#result, #dict-view {
     width: 500px;
     height: 50%;
     text-align: left;
@@ -61,3 +61,15 @@ select {
     margin: 5px;
     border-radius: 8px;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid var(--main-color);
+    text-align: left;
+    padding: 8px;
+  }
