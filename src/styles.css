@@ -73,3 +73,7 @@ table {
     text-align: left;
     padding: 8px;
   }
+
+  .clicked-row {
+    background-color: #fce9c5;
+}

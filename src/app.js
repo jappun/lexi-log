@@ -19,7 +19,8 @@ function search() {
     fetch(req)
     .then(response => {return response.json()})
     .then(data => {
-        localStorage.setItem('newWordData', JSON.stringify(data));
+        var filteredData = data.filter(element => element.text);
+        localStorage.setItem('newWordData', JSON.stringify(filteredData));
         location.href = "new.html";
         })
     .catch(error => {
