@@ -1,4 +1,4 @@
-# Dictionary Chrome Extension
+# LexiLog
 I often come across new words while reading online. I look them up but quickly forget them, so I built this Chrome Extension to jot down the words with their definitions and my own notes too.
 
 ### How to Use
