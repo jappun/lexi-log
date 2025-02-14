@@ -1,9 +1,15 @@
 # LexiLog
-I often come across new words while reading online. I look them up but quickly forget them, so I built this Chrome Extension to jot down the words with their definitions and my own notes too.
+I often come across new words while reading online. I look them up but quickly forget them, so I built this Chrome extension to save words along with their definitions and personal notes.
 
-### How to Use
-I don't plan to publish this to the Chrome Store. However, you are welcome to download it! You'll need to retrieve a free API key from https://wordnik.com/. Once you have it, paste this value at the top of App.js to set the API_KEY variable. Then you can upload the extension to Chrome (instructions here: https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked) and start using it!
+### ▶️ Running Locally
+1. Sign up for a free API key from [Wordnik](https://wordnik.com/).
+2. Set the API_KEY variable at the top of the app.js to your API key value
+3. Upload the extension to Chrome by followin [these instructions](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked)
+4. Start expanding your vocabulary
 
-### Possible Future Features
-- quiz/flashcards made from the words in your dictionary
-- include pronuciation audio
+### ⚠️ Protect your API key
+If you upload according to my instructions above, only you can access the extension. **If you publish to the Chrome store, you will leak your API key**. Bad agents can abuse the key registered to your name. You can request a new key from Wordnik if you accidentally leak yours.
+
+### ✅ Possible Future Features
+- [ ] quiz/flashcards made from the words in your dictionary
+- [ ] include pronuciation audio
